@@ -1,1 +1,1 @@
-nvim D:\report\daily-report -c 'normal ~'
+nvim D:\report\daily-report -c "lua require('oil').set_sort({{'ctime', 'asc'}})" -c "normal ~"

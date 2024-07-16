@@ -71,8 +71,8 @@ for path in filepaths:
             worksheet.write(row, 0, get_date(path), border)
 
         # Activities
-        for b in lines:
-            worksheet.write(row, 1, b[3:-1], border)
+        for line in lines:
+            worksheet.write(row, 1, line[line.find(". ") + 2 :], border)
             row += 1
 
 
